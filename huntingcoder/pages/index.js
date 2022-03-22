@@ -2,28 +2,24 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Dummy from '../components/dummy'
-
-// import styles1 from '../styles/Home1.module.css'
-// import styles2 from '../styles/Home2.module.css'
 
 export default function Home() {
   return (
     <div className={styles.container}>
-        <Dummy/>
         <style jsx>
             {`
-                .mySpan{
-                    color: red;
-                }
-            
+            h2{
+                font-size: 38px;
+            }
+            h3{
+                font-size: 28px;
+            }
             `}
         </style>
       <Head>
         <title>Hunting coder</title>
         <meta name="keywords" content="nextjs, huntingcoder blog, hunting coder" />
         <link rel="icon" href="/favicon.ico" />
-        {/* <Script  src="./sc.js"></Script> */}
       </Head>
       <nav className={styles.mainnav}>
           <ul>
@@ -35,11 +31,11 @@ export default function Home() {
       </nav>
       <main className={styles.main}>
         <h1 className={styles.title}>
-            <span className="mySpan dummy">
         Hunting coder
-        </span>
         </h1>
-
+        <div className={styles.imgWrapper}>
+        <Image className={styles.myImg} src="/homeimg.jpg" width={237} height={158} />
+        </div>
         <p className={styles.description}>
           A blog for the hunting coders by a hunting coder
         </p>
@@ -62,16 +58,6 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
       </footer>
     </div>
   )
