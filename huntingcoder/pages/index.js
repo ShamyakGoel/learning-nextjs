@@ -2,8 +2,11 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+// import styles1 from '../styles/Home1.module.css'
+// import styles2 from '../styles/Home2.module.css'
 
 export default function Home() {
+    console.log(process.env.key.key1)
   return (
     <div className={styles.container}>
       <Head>
@@ -29,7 +32,7 @@ export default function Home() {
           A blog for the hunting coders by a hunting coder
         </p>
 
-       <div className="blogs">
+       <div>
            <h2>Popular Blogs</h2>
         <div className="blogItem">
             <h3>How to learn javascript in 2022</h3>
