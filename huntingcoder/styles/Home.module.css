@@ -126,3 +126,10 @@
     list-style: none;
     font-weight: bolder;
 }
+.mainnav ul li{
+    cursor: pointer;
+}
+.mainnav ul li:hover{
+    font-weight: 600;
+
+}
