@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Dummy from '../components/dummy'
 
 // import styles1 from '../styles/Home1.module.css'
 // import styles2 from '../styles/Home2.module.css'
@@ -9,6 +10,15 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
     <div className={styles.container}>
+        <Dummy/>
+        <style jsx>
+            {`
+                .mySpan{
+                    color: red;
+                }
+            
+            `}
+        </style>
       <Head>
         <title>Hunting coder</title>
         <meta name="keywords" content="nextjs, huntingcoder blog, hunting coder" />
@@ -25,7 +35,9 @@ export default function Home() {
       </nav>
       <main className={styles.main}>
         <h1 className={styles.title}>
+            <span className="mySpan dummy">
         Hunting coder
+        </span>
         </h1>
 
         <p className={styles.description}>
