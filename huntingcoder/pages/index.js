@@ -2,11 +2,11 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+
 // import styles1 from '../styles/Home1.module.css'
 // import styles2 from '../styles/Home2.module.css'
 
 export default function Home() {
-    console.log(process.env.key.key1)
   return (
     <div className={styles.container}>
       <Head>
